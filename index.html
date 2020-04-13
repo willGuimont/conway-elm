@@ -5641,6 +5641,7 @@ var $elm$html$Html$Events$onClick = function (msg) {
 		'click',
 		$elm$json$Json$Decode$succeed(msg));
 };
+var $elm$html$Html$p = _VirtualDom_node('p');
 var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
 var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
 var $elm$html$Html$table = _VirtualDom_node('table');
@@ -5681,6 +5682,16 @@ var $author$project$Main$view = function (model) {
 		_List_Nil,
 		_List_fromArray(
 			[
+				A2(
+				$elm$html$Html$p,
+				_List_fromArray(
+					[
+						A2($elm$html$Html$Attributes$style, 'font-weight', 'bold')
+					]),
+				_List_fromArray(
+					[
+						$elm$html$Html$text('Conway Game of Life')
+					])),
 				A2($elm$html$Html$table, _List_Nil, table),
 				A2(
 				$elm$html$Html$button,
