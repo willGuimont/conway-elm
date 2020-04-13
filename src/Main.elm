@@ -81,6 +81,7 @@ view model =
 
     in
     Html.div []
-        [ Html.table [] table
+        [ Html.p [Html.Attributes.style "font-weight" "bold"] [Html.text "Conway Game of Life"]
+        , Html.table [] table
         , Html.button [ Html.Events.onClick StepGrid ] [ Html.text "Step" ]
         ]
